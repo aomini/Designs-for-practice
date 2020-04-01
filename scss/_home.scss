@@ -1,0 +1,253 @@
+.main-logo {
+  color: $twittercolor;
+  font-size: 26px !important;
+}
+
+.tw-home-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  .tw-home-left {
+    grid-column: 1 / 2;
+    background: $text-white;
+    border-right: 1px solid #e3e3e3;
+    @include flex-center();
+
+    ul {
+      padding: 0px;
+
+      li {
+        list-style-type: none;
+        font-size: 19px;
+        font-weight: map-get($font-weights, regular);
+        color: $text-black;
+        font-weight: bold;
+        padding: 15px;
+        cursor: pointer !important;
+        &:hover a {
+          color: $twittercolor;
+          border-radius: 50px;
+          background: #dbf2ff;
+        }
+        .icon {
+          font-size: 24px;
+          margin-right: 15px;
+        }
+
+        a {
+          text-decoration: none;
+          color: $text-black;
+          padding: 15px;
+          &:hover {
+            cursor: pointer;
+          }
+          &.active {
+            color: $twittercolor;
+          }
+        }
+      }
+    }
+  }
+
+  .tw-home-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 10vh 90vh;
+    .tw-top-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      position: sticky;
+      .tw-nav-header {
+        grid-column: 1 / 2;
+        border-right: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        span {
+          font-size: 20px;
+          font-weight: bolder;
+        }
+      }
+      .tw-top-search {
+        grid-column: 2/3;
+        @include flex-center();
+        input {
+          border-left: none;
+          height: 34px;
+          border-radius: 22px;
+          border: 1px solid black;
+          outline: none;
+          padding: 15px;
+          width: 85%;
+        }
+      }
+    }
+
+    .tw-bottom-row {
+      background: #fff;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      .tw-bottom-left {
+        .tw-icons-tweet {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 10px 10px 65px;
+          border-right: 1px solid #e3e3e3;
+          .icons {
+            i {
+              font-size: 24px;
+              color: $twittercolor;
+              padding: 10px;
+              &:hover {
+                border-radius: 50px;
+                background: #dbf2ff;
+                cursor: pointer;
+              }
+            }
+          }
+          .sm-tw-btn {
+            width: 75px;
+            height: 40px;
+            opacity: 0.5;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .tw-bottom-left-top-row {
+        display: flex;
+        grid-column: 1/2;
+        padding: 10px;
+        border-right: 1px solid #e3e3e3;
+        .tw-textarea {
+          border: none;
+          outline: none;
+          font-size: 18px;
+          padding: 10px;
+          overflow: hidden;
+          width: 100%;
+        }
+
+        i {
+          font-size: 49px;
+          margin-bottom: 10px;
+        }
+      }
+      .tw-bottom-left-bottom-row {
+        border-right: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
+        padding: 10px;
+        display: flex;
+        &:hover {
+          background: #f7f7f7;
+          cursor: pointer;
+        }
+        .blbr-left {
+          text-align: right;
+        }
+        .blbr-right {
+          padding-left: 5px;
+          p {
+            padding: 0px;
+            margin: 0px;
+          }
+          .tw-text {
+            color: #14171a;
+            font-size: 15px;
+          }
+          .blbr-name-date {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            .blbr-right-name-date-span {
+              color: $text-silver;
+              &:hover + .popUp {
+                transition: all ease-in .5s;
+                visibility: visible;
+                display: block;
+                background: #fff;
+                border: 1px solid #e3e3e3;
+                border-radius: 10px;
+                position:absolute;
+                right: 365px;
+                top: 27px;
+              }
+              span {
+                color: #000;
+                font-weight: bold;
+              }
+            }
+            .popUp {
+              visibility: hidden;
+              display:none;
+            }
+          }
+          .blbr-right-bottom-icons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            .icon-data {
+              display: flex;
+              justify-content: space-around;
+              &:hover {
+                cursor: pointer;
+              }
+              i {
+                margin-right: 5px;
+                padding: 10px;
+                border-radius: 50%;
+              }
+            }
+            .icon-data-comments:hover i {
+              color: $twittercolor;
+              background: #d3f0ff;
+            }
+            .icon-data-comments:hover span {
+              color: $twittercolor;
+            }
+            .icon-data-retweets:hover i {
+              color: #006400;
+              background: #b9ffb9;
+            }
+            .icon-data-retweets:hover span {
+              color: #006400;
+            }
+            .icon-data-hearts:hover i {
+              color: #e31b23;
+              background: #ffd4d6;
+            }
+            .icon-data-hearts:hover span {
+              color: #e31b23;
+            }
+            .icon-data-uploads:hover i {
+              color: $twittercolor;
+              background: #d3f0ff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+*Buttons
+*/
+.tw-btn {
+  background: $twittercolor;
+  width: 200px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: $text-white;
+  height: 50px;
+  font-weight: bolder;
+  cursor: pointer;
+  &:hover {
+    background: #1282c7;
+  }
+}

@@ -1,0 +1,37 @@
+body,html{
+    padding:0px;
+    margin: 0px;
+}
+
+*,*::after, *::before{
+    box-sizing:border-box;
+}
+
+p,a,h1,h2,h3,li,span,textarea{
+    font-family: 'Open Sans', sans-serif;
+}
+
+// margins
+.mb-10{
+    margin-bottom: 10px;
+}
+.mt-9{
+    margin-top:9px;
+}
+// font-sizes
+.fs-13{
+    font-size: 13px;
+}
+// colors
+.clr-slvr{
+    color:#657786
+}
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
