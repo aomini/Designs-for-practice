@@ -18,7 +18,6 @@ This project is a clone of "Twitter" & it is build to provide a ready-made UI De
 1. npm install
 2. npm run build
 
-### Pages <a name="pages" />
 
 - [ ] [Landing Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/landing.html)
 - [ ] [Landing Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/landing.html)
