@@ -19,8 +19,8 @@ This project is a clone of "Twitter" & it is build to provide a ready-made UI De
 2. npm run build
 
 
-- [ ] Explore Page.
-- [x] [Notifications Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/notification.html)
+* [ ] Explore Page.
+* [x] [Notifications Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/notification.html)
 - [x] [Messages Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/messages.html)
 - [ ] Bookmarks Page
 - [ ] Lists Page
