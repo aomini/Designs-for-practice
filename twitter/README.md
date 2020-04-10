@@ -19,11 +19,11 @@ This project is a clone of "Twitter" & it is build to provide a ready-made UI De
 2. npm run build
 
 
-* [ ] Explore Page.
-* [x] [Notifications Page]
+- [ ] Explore Page.
+- [x] [Notifications Page]
 - [x] [Messages Page]
 - [ ] Bookmarks Page
 - [ ] Lists Page
-- [x] [Profile Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/profile.html)
+- [x] asdf
 
 
