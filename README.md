@@ -3,5 +3,5 @@ This repo contains the front end designs with html and css. Inorder to create a 
 
 ## Table of contents
 * Twitter
-* Shows
-* Blog
+* ~~Shows~~
+* ~~Blog~~
