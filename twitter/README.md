@@ -18,27 +18,15 @@ This repo contains the front end designs with html and css. Inorder to create a 
 1. npm install :- installs the node dependancies.
 2. npm run build :- compiles .js & .scss with webpack into `dist/main.js`
 
+NOTE : ( All the pages can be found at `src/pages` and concerned `sass` files at `src/sass` example: `src/pages/landing.html` sass is in `src/sass/landing.scss` )
 
-<<<<<<< HEAD
-- (all the pages can be found at `src/pages` and concerned `sass` files at `src/sass` example: ``src/pages/landing.html`sass is in`src/sass/landing.scss`)
+### List of available pages <a name="pages" />:
 
-#### List of available pages:
-
-- [x] [Landing](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/srcs/landing.html)
-- [x] [Home](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/srcs/home.html)
+- [x] Landing
+- [x] Home
 - [ ] Explore
-- [x] [Notifications](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/srcs/notification.html)
-- [x] [Messages](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/srcs/messages.html)
+- [x] Notifications
+- [x] Messages
 - [ ] Bookmarks
 - [ ] Lists
-- [x] [Profile](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/profile.html)
-=======
-- [ ] Explore Page.
-- [x] [Notifications Page]
-- [x] [Messages Page]
-- [ ] Bookmarks Page
-- [ ] Lists Page
-- [x] asdf
-
-
->>>>>>> ed8d431e4baffe9111eaa543e8b57e4c2eeabbca
+- [x] Profile
