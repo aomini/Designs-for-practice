@@ -20,8 +20,7 @@ This project is a clone of "Twitter" & it is build to provide a ready-made UI De
 
 ### Pages <a name="pages" />
 
-
-- [x] [Landing Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/landing.html)
+- [] [Landing Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/landing.html)
 - [x] [Home Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/home.html)
 - [ ] Explore Page
 - [x] [Notifications Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/notification.html)
