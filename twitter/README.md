@@ -11,22 +11,24 @@ This is project "Twitter clone".
 
 ### Overview <a name="overview" />
 
-This project is a clone of "Twitter" & it is build to provide a ready-made UI Design to anybody who needs some practise.
+This repo contains the front end designs with html and css. Inorder to create a project with some other languages to nurture your skills and save time without the need to create the ui.
 
 ### Installation <a name="installation" />
 
-1. npm install
-2. npm run build
+1. npm install :- installs the node dependancies.
+2. npm run build :- compiles .js & .scss with webpack into `dist/main.js`
 
 ### Pages <a name="pages" />
 
-- [x] [Landing Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/landing.html)
-- [x] [Home Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/home.html)
-- [ ] Explore Page
-- [x] [Notifications Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/notification.html)
-- [x] [Messages Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/messages.html)
-- [ ] Bookmarks Page
-- [ ] Lists Page
-- [x] [Profile Page](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/profile.html)
+- (all the pages can be found at `src/pages` and concerned `sass` files at `src/sass` example: ``src/pages/landing.html`sass is in`src/sass/landing.scss`)
 
-### Resources <a name="resources" />
+#### List of available pages:
+
+- [x] [Landing](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/srcs/landing.html)
+- [x] [Home](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/srcs/home.html)
+- [ ] Explore
+- [x] [Notifications](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/srcs/notification.html)
+- [x] [Messages](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/srcs/messages.html)
+- [ ] Bookmarks
+- [ ] Lists
+- [x] [Profile](https://github.com/rakeshshubhu/Designs-for-practice/blob/master/twitter/src/pages/profile.html)
