@@ -6,3 +6,6 @@ This repo contains the front end designs with html and css. Inorder to create a 
 * ~~Shows~~
 * ~~Blog~~
 
+## *Contributors*
+* [Prajesh Jha](https://github.com/shubhuprajesh
+
