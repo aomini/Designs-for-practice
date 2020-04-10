@@ -1,0 +1,88 @@
+.tw-nav-header-profile {
+    display: flex;
+    border-right: 1px solid #cad2d9;
+    border-bottom: 1px solid #cad2d9;
+    i {
+        color: $twittercolor;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-right: 10px;
+        &:hover {
+            background: $twitterhover;
+            cursor: pointer;
+            border-radius: 22px;
+            padding:10px;
+        }
+    }
+    .nav-head-span {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        span:first-child {
+            font-weight: bold;
+            font-size: 19px;
+        }
+    }
+}
+.tw-bottom-left{
+    border-right: 1px solid #cad2d9;
+}
+.tw-info {
+    padding: 10px;
+}
+.image-btn {
+    display: flex;
+    justify-content: space-between;
+    max-height: 70px;
+}
+.tw-info {
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+    .pop-up-user {
+        span {
+            color: black;
+            font-weight: bold;
+            font-size: 19px;
+        }
+        i {
+            color: $twittercolor;
+        }
+        p {
+            color: $text-silver;
+            font-size: 15px;
+        }
+    }
+    .pop-up-main-text p {
+        font-size: 15px;
+    }
+    .date {
+        font-size: 15px;
+        color: $text-silver;
+    }
+    .follow-nos {
+        font-size: 15px;
+        span {
+            font-weight: bold;
+        }
+        p {
+            margin-left: 10px;
+            color: $text-silver;
+        }
+    }
+}
+.profile-tabs {
+    span {
+        font-size: 15px;
+        color: #1da1f2;
+        font-weight: bold;
+        padding: 15px;
+        border-bottom: 2px solid #1da1f2;
+        &:hover{
+            cursor: pointer;
+            background: $twitterhover;
+        }
+    }
+}

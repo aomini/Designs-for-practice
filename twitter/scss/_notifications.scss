@@ -1,0 +1,73 @@
+.tw-notifications-nav-header {
+    border-bottom: none !important;
+    i {
+        color: $twittercolor;
+        font-size: 23px;
+    }
+    span {
+        font-size: 19px;
+    }
+}
+.tw-bottom-left-top-row-notifications {
+    border-right: none !important;
+    display: flex;
+    justify-content: space-around;
+    .profile-tabs-notifications {
+        cursor: pointer;
+        border-bottom: 1px solid #e3e3e3;
+        font-weight: bold;
+        color: $text-silver;
+        padding: 15px;
+        font-size: 15px;
+        width: 50%;
+        text-align: center;
+        &:hover {
+            background: $twitterhover;
+        }
+    }
+    .active {
+        border-bottom: 2px solid $twittercolor;
+        color: $twittercolor;
+    }
+}
+.notifications-detail {
+    display: flex;
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid #e3e3e3;
+    &:hover{
+        cursor: pointer;
+        background:#f1f6f9;
+    }
+    .notifications-purple-star {
+        padding: 0px 10px;
+        i {
+            font-size: 28px;
+            color: #794bc4;
+        }
+    }
+    .notifications-tweet-details {
+        width: 515px;
+        padding: 0px 10px;
+        padding-right: 0px;
+        .tweet-details-top {
+            display: flex;
+            justify-content: space-between;
+        }
+        .tweet-details-title {
+            p {
+                padding: 0px;
+                margin: 0px;
+            }
+            span {
+                font-weight: bold;
+            }
+        }
+        .tweet-details-text {
+            color: $text-silver;
+        }
+        .tweet-details-link {
+            color: $text-silver;
+        }
+    }
+}

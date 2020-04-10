@@ -1,0 +1,159 @@
+.tw-msgs-main {
+    display: grid;
+    grid-template-columns: 317px 3fr;
+
+    .tw-msgs-left {
+        grid-column: 1 / 2;
+        background: $text-white;
+        border-right: 1px solid #e3e3e3;
+        @include flex-center();
+        width: 317px;
+        ul {
+            padding: 0px;
+
+            li {
+                list-style-type: none;
+                font-size: 19px;
+                font-weight: map-get($font-weights, regular);
+                color: $text-black;
+                font-weight: bold;
+                padding: 15px;
+                cursor: pointer !important;
+                &:hover a {
+                    color: $twittercolor;
+                    border-radius: 50px;
+                    background: #dbf2ff;
+                }
+
+                .icon {
+                    font-size: 24px;
+                    margin-right: 15px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $text-black;
+                    padding: 15px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &.active {
+                        color: $twittercolor;
+                    }
+                }
+            }
+        }
+    }
+
+    .tw-msgs-right {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 10vh 90vh;
+        .tw-top-row {
+            display: grid;
+            grid-template-columns: 390px 1fr;
+            position: sticky;
+            height: 100%;
+            .tw-nav-header {
+                grid-column: 1 / 2;
+                border-right: 1px solid #e3e3e3;
+                border-bottom: 1px solid #e3e3e3;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                width: 390px;
+                height: 100%;
+                span {
+                    font-size: 20px;
+                    font-weight: bolder;
+                }
+                i {
+                    color: $twittercolor;
+                    font-size: 23px;
+                }
+            }
+        }
+
+        .tw-bottom-row {
+            background: #fff;
+            display: grid;
+            grid-template-columns: 390px 1fr;
+            height: 90vh;
+            overflow-y: scroll;
+
+            .tw-bottom-left {
+                width: 390px;
+                display: flex;
+                flex-direction: column;
+
+                .tw-top-search {
+                    grid-column: 2/3;
+                    @include flex-center();
+                    padding: 15px;
+                    border-bottom: 1px solid #e3e3e3;
+                    input {
+                        height: 40px;
+                        border-radius: 22px;
+                        border: none;
+                        background: #e6ecf0;
+                        outline: none;
+                        padding: 10px;
+                        width: 100%;
+                        padding-left: 35px;
+                    }
+                    i {
+                        position: relative;
+                        left: 25px;
+                        color: grey;
+                    }
+                }
+
+                .tw-bottom-left-bottom-row {
+                    padding: 39px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    .msg-top-bold-txt span {
+                        font-size: 19px;
+                        font-weight: bold;
+                        color: black;
+                    }
+                    .msg-mid-txt span {
+                        font-size: 15px;
+                        color: $text-silver;
+                    }
+                    .msg-btn button {
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .tw-bottom-right {
+                padding: 15px;
+                padding-right: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .msg-top-bold-txt span {
+                    font-size: 19px;
+                    font-weight: bold;
+                    color: black;
+                }
+                .msg-mid-txt span {
+                    font-size: 15px;
+                    color: $text-silver;
+                }
+                .msg-btn button {
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
