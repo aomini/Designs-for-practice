@@ -1,0 +1,41 @@
+.more-details {
+    color: white;
+}
+
+.banner {
+    height: 400px;
+    max-width: 100%;
+    min-width: 300px;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+}
+
+.show-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.detail-summary {
+    color: white;
+    margin-bottom: 0;
+}
+
+.episodes h2 {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    color: black;
+    background: white;
+    margin: 5px 0 5px;
+    padding: 8px;
+}
+
+

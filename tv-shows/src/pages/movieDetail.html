@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Detail</title>
+  </head>
+  <body>
+    <div>
+        <!-- Nav Start -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="
+          background-color: #05158e;
+          margin-top: 10px;
+          border-radius: 4px;
+          padding: 0px;
+        "
+      >
+        <a
+          class="navbar-brand"
+          href="#"
+          data-abc="true"
+          style="font-weight: bolder; font-size: 90px; color: #ffc107;"
+          >SHOWTIME !</a
+        >
+       
+        <div class="collapse navbar-collapse d-flex justify-content-end">
+          <!-- <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-abc="true">
+                  Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-abc="true">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-abc="true">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-abc="true">Contact</a>
+              </li>
+            </ul> -->
+          <form class="form-inline my-2 my-lg-0" v-if="searchInput">
+            <input class="searchInput" type="text" placeholder="Search.." />
+          </form>
+        </div>
+      </nav>
+      <!-- Nav end -->
+      <div>
+        <div class="detail-header d-flex">
+          <div
+            class="banner"
+          ></div>
+          <div style="margin-left: 30px;">
+            <div class="show-details">
+              <h1></h1>
+            </div>
+            <div class="more-details">
+              Ratings : <br />
+              Language : <br />
+              Genre : <br />
+              Runtime : <br />
+              Premiered :
+            </div>
+            <br />
+            <p class="detail-summary" v-html="movie.summary"></p>
+          </div>
+        </div>
+        <br />
+        <div class="episodes">
+          <h2>EPISODES</h2>
+          <ul>
+            <li v-for="episode in episodes" :key="episode.id">
+              <div class="d-flex">
+                <h4>
+                  Episode no. 121    Episode Name
+                </h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./../../dist/main.js"></script>
+  </body>
+</html>

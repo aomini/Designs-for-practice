@@ -1,0 +1,26 @@
+{
+  "name": "tv-shows",
+  "version": "1.0.0",
+  "description": "tv-shows design",
+  "main": "webpack.config.js",
+  "devDependencies": {
+    "css-loader": "^3.5.2",
+    "node-sass": "^4.13.1",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/rakeshshubhu/Designs-for-practice"
+  },
+  "author": "prajesh, rakesh",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "sass-loader": "^8.0.2",
+    "webpack-cli": "^3.3.11"
+  }
+}
