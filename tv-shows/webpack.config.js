@@ -1,9 +1,17 @@
 var path = require('path')
 
 module.exports = {
-    entry: './src/index.js',
+    // entry: './src/index.js',
     mode : 'development',
     watch : true,
+    entry: {
+        main: './src/index.js',
+        vendor: './src/vendor.js',
+    },
+    output: {
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
     module : {
         rules : [
             {
@@ -12,6 +20,13 @@ module.exports = {
                     'style-loader',
                     'css-loader',
                     'sass-loader',
+                ]
+            },
+            {
+                test : /\.css$/i,
+                use : [
+                    'style-loader',
+                    'css-loader',
                 ]
             }
         ]
@@ -22,7 +37,7 @@ module.exports = {
         port: 9000
     },
     resolve : {
-        extensions : ['.js', '.scss']
+        extensions : ['.js', '.scss', '.css']
     }
 }
 
