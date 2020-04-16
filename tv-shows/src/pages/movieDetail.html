@@ -6,17 +6,9 @@
     <title>Movie Detail</title>
   </head>
   <body>
-    <div>
-        <!-- Nav Start -->
-      <nav
-        class="navbar navbar-expand-lg navbar-light"
-        style="
-          background-color: #05158e;
-          margin-top: 10px;
-          border-radius: 4px;
-          padding: 0px;
-        "
-      >
+    <div class="container">
+      <!-- Nav Start -->
+      <nav class="navbar navbar-expand-lg navbar-light">
         <a
           class="navbar-brand"
           href="#"
@@ -24,66 +16,99 @@
           style="font-weight: bolder; font-size: 90px; color: #ffc107;"
           >SHOWTIME !</a
         >
-       
+
         <div class="collapse navbar-collapse d-flex justify-content-end">
           <!-- <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-abc="true">
-                  Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-abc="true">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-abc="true">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-abc="true">Contact</a>
-              </li>
-            </ul> -->
-          <form class="form-inline my-2 my-lg-0" v-if="searchInput">
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-abc="true">
+                Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-abc="true">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-abc="true">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-abc="true">Contact</a>
+            </li>
+          </ul> -->
+          <!-- <form class="form-inline my-2 my-lg-0">
             <input class="searchInput" type="text" placeholder="Search.." />
-          </form>
+          </form> -->
         </div>
       </nav>
       <!-- Nav end -->
       <div>
-        <div class="detail-header d-flex">
-          <div
-            class="banner"
-          ></div>
-          <div style="margin-left: 30px;">
-            <div class="show-details">
-              <h1></h1>
-            </div>
-            <div class="more-details">
-              Ratings : <br />
-              Language : <br />
-              Genre : <br />
-              Runtime : <br />
-              Premiered :
-            </div>
-            <br />
-            <p class="detail-summary" v-html="movie.summary"></p>
-          </div>
-        </div>
-        <br />
-        <div class="episodes">
-          <h2>EPISODES</h2>
-          <ul>
-            <li v-for="episode in episodes" :key="episode.id">
-              <div class="d-flex">
-                <h4>
-                  Episode no. 121    Episode Name
-                </h4>
+        <div style="padding: 20px;">
+          <div class="detail-header d-flex">
+            <img src="./../images/bb.jpg" class="banner" />
+            <div style="margin-left: 30px;">
+              <div class="show-details">
+                <h1>Breaking Bad</h1>
               </div>
-            </li>
-          </ul>
+              <div class="more-details">
+                Ratings : 9.5/10<br />
+                Language : English <br />
+                Genre : Drama, Crime, Thriller<br />
+                Runtime : 1 hr<br />
+                Premiered : 2005
+              </div>
+              <br />
+              <p class="detail-summary" v-html="movie.summary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati, nostrum! Tempore ad animi perferendis eius esse
+                architecto pariatur. Enim voluptate ab nostrum fugit animi rem
+                expedita unde, aspernatur temporibus illum?Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Adipisci ut, qui officiis
+                quas suscipit provident, ipsam asperiores et exercitationem
+                nesciunt est dicta sequi quos veniam aperiam maiores similique
+                laudantium voluptas.
+              </p>
+            </div>
+          </div>
+          <br />
+          <div class="episodes">
+            <h2>EPISODES</h2>
+            <ul>
+              <li v-for="episode in episodes" :key="episode.id">
+                <div class="d-flex">
+                  <h4>
+                    <b>
+                      #. &nbsp;&nbsp;&nbsp;&nbsp; Title
+                    </b>
+                  </h4>
+                </div>
+              </li>
+              <li v-for="episode in episodes" :key="episode.id">
+                <div class="d-flex">
+                  <h4>
+                    1. &nbsp;&nbsp;&nbsp;&nbsp; Episode One
+                  </h4>
+                </div>
+              </li>
+              <li v-for="episode in episodes" :key="episode.id">
+                <div class="d-flex">
+                  <h4>
+                    2. &nbsp;&nbsp;&nbsp;&nbsp; Episode Two
+                  </h4>
+                </div>
+              </li>
+              <li v-for="episode in episodes" :key="episode.id">
+                <div class="d-flex">
+                  <h4>
+                    3. &nbsp;&nbsp;&nbsp;&nbsp; Episode Three
+                  </h4>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <script src="./../../dist/main.js"></script>
+    <script src="./../../dist/vendor.bundle.js"></script>
+    <script src="./../../dist/main.bundle.js"></script>
   </body>
 </html>
