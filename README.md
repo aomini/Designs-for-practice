@@ -3,8 +3,7 @@ This repo contains the front end designs with html and css. Inorder to create a 
 
 ## Table of contents
 * [Twitter](https://github.com/rakeshshubhu/Designs-for-practice/tree/master/twitter) 
-* ~~Shows~~
-* ~~Blog~~
+* shows
 
 ## *Contributors*
 * [Prajesh Jha](https://github.com/shubhuprajesh)
