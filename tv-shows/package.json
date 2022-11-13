@@ -21,6 +21,6 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "sass-loader": "^8.0.2",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   }
 }
